@@ -16,7 +16,7 @@ RUN apt-get -y install wget \
 RUN wget -q -O - https://apt.mopidy.com/mopidy.gpg | apt-key add -
 RUN wget -q -O /etc/apt/sources.list.d/mopidy.list http://apt.mopidy.com/mopidy.list
 RUN apt-get -q update
-RUN apt-get -y install mopidy # some more fun: mopidy-soundcloud mopidy-spotify 
+RUN apt-get -y install mopidy mopidy-soundcloud mopidy-spotify
 RUN easy_install cherrypy>=3.2.2
 
 # Shared volume
