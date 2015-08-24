@@ -32,6 +32,6 @@ RUN pip install Mopidy-API-Explorer
 RUN pip install Mopidy-Youtube
 RUN pip install Mopidy-Moped
 # Add this if you want spotify 
-#RUN pip install Mopidy-Mopify
+RUN pip install Mopidy-Mopify
 
 CMD ["mopidy"]
