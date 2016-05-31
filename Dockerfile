@@ -10,7 +10,7 @@ RUN apt-get -y install wget \
     alsa-oss \
     flac \
     python-setuptools \
-    python-pip 
+    python-pip
 
 # Install Mopidy
 RUN wget -q -O - https://apt.mopidy.com/mopidy.gpg | apt-key add -
@@ -31,7 +31,9 @@ ADD mopidy.conf /root/.config/mopidy/mopidy.conf
 RUN pip install Mopidy-API-Explorer
 RUN pip install Mopidy-Youtube
 RUN pip install Mopidy-Moped
-# Add this if you want spotify 
+RUN pip install Mopidy-Notifier
+RUN pip install Mopidy-Gmusic
+# Add this if you want spotify
 RUN pip install Mopidy-Mopify
 
 CMD ["mopidy"]
