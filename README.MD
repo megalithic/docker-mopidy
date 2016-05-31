@@ -7,11 +7,11 @@ Docker image for the [Mopidy](https://www.mopidy.com/) music service with [Mopif
 #Build
 
 ```
-docker build -t bencevans/mopidy:latest .
+docker build -t megalithic/mopidy:latest .
 ```
 
 
-#Run it with 
+#Run it with
 ```
-docker run -v /dev/snd:/dev/snd --privileged -p 6680:6680 -v /usr/share/sounds/alsa/:/var/media -d bencevans/mopidy:latest
+docker run -v /dev/snd:/dev/snd --privileged -p 6680:6680 -v /usr/share/sounds/alsa/:/var/media -d megalithic/mopidy:latest
 ```
